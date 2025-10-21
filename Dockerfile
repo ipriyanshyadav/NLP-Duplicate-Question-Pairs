@@ -18,7 +18,8 @@ COPY . .
 # Create the models directory and download the models using gdown
 RUN mkdir -p models && \
     gdown --id 12dkExGVsoqpNjGq-meBO5uF7nXrPOvtu -O models/w2v_classifier.pkl && \
-    gdown --id 1a2stf2DF8G9_YmbSDgtm3qlVOlGm1Gpk -O models/word2vec_model.model
+    gdown --id 1a2stf2DF8G9_YmbSDgtm3qlVOlGm1Gpk -O models/word2vec_model.model && \
+    ls -lh models/
 
 # Expose the port that Streamlit runs on
 EXPOSE 8501
