@@ -7,7 +7,7 @@ sdk: streamlit
 sdk_version: 1.28.1
 app_file: app.py
 pinned: false
-license:
+license: others
 ---
 
 # 🔍 Duplicate Question Detector
